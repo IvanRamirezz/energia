@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  site: 'https://IvanRamirezz.github.io',
+  site: 'https://IvanRamirezz.github.io"',
   base: 'energia', // 👈 ESTO ES CLAVE
 })
