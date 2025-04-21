@@ -1,0 +1,172 @@
+---
+
+---
+<style>
+    .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  gap: 1rem;
+}
+
+.card {
+  margin: 0 auto;
+}
+
+    .energia-section {
+  background-image: url('../../public/images/fondo3.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.253);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.titulo-central {
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgba(85, 107, 47, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subtitulo {
+  background-color: rgba(85, 107, 47, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  max-width: 100%;
+  font-size: 1.2rem;
+  width: 50%;
+  height: 30%; /* Tamaño fijo */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.card {
+  background-color: rgba(85, 107, 47, 0.8);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.final-msg {
+  margin-top: 2rem;
+  background-color: rgba(85, 107, 47, 0.9);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.card {
+  background-color: rgba(85, 107, 47, 0.8);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 80%;
+  height: 40%; /* Tamaño fijo */
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* Pantallas grandes (como tu diseño) */
+@media (min-width: 768px) {
+  .grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .item {
+    width: 48%;
+  }
+
+  .titulo-central {
+    font-size: 2.5rem;
+  }
+
+}
+
+/* Pantallas grandes (como tu diseño) */
+@media (max-width: 768px) {
+    .subtitulo{
+        font-size: 1.2rem;
+    }
+    .card {
+        font-size: 0.9rem;
+    }
+    .final-msg{
+        font-size: 0.8rem;
+    }
+}
+
+</style>
+
+<section class="energia-section">
+    <div class="overlay">
+      <h2 class="titulo-central">TIPOS</h2>
+  
+      <div class="grid">
+        <div class="item">
+          <h3 class="subtitulo">Energía no renovable: poder con fecha de caducidad</h3>
+          <div class="card">
+            <p>
+              Estas fuentes de energía provienen de recursos que no se regeneran fácilmente.
+              Son potentes y todavía muy usadas, pero también son responsables de una buena parte de la contaminación ambiental.
+            </p>
+          </div>
+        </div>
+  
+        <div class="item">
+          <h3 class="subtitulo">Energía renovable: el futuro que ya está aquí</h3>
+          <div class="card">
+            <p>
+              Estas fuentes se obtienen de la naturaleza y se regeneran constantemente.
+              Son más limpias, sostenibles y cada vez más utilizadas en todo el mundo.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <p class="final-msg">
+        Si te interesa este tema, ¡pronto estaré publicando más sobre cuáles son y cómo funciona cada uno de estos métodos y cómo impactan en nuestro día a día! 🚀
+      </p>
+    </div>
+  </section>
+  
+  
+  
